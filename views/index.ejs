@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sleep Tracker App</h1>
+  <h2>Let's track our sleep!</h2>
+
+  <h2>Add a Sleep Log</h2>
+
+  <form action="/messages" method="POST">
+    <input type="date" name="date" required>
+    <input type="time" name="name" placeholder="Bedtime" required>
+    <input type="time" name="msg" placeholder="Wake Up Time" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Sleep Log Summary</h3>
+
+  <ul class="messages">
+    <% for (var i = 0; i < messages.length; i++) { %>
+      <li class="message">
+        <span><%= messages[i].name %></span>
+        <span><%= messages[i].msg %></span>
+        <span><%= messages[i].thumbUp || 0 %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"> Sleep Quality Good </i></span>
+        <span><i class="fa fa-thumbs-down" aria-hidden="true"> Sleep Quality Bad </i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"> Delete Log </i></span>
+      </li>
+    <% } %>
+  </ul>
+  <script src="main.js"></script>
+</body>
+</html>

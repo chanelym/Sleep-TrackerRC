@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(5, 5, 73);
+  color: white;
+  margin: 0;
+  padding: 35px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: grey;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: rgb(7, 7, 83);
+  max-width: 500px;
+  margin: 20px auto 40px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background-color: grey;
+  color: rgb(10, 10, 101);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+h3 {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.message {
+  background-color: rgb(10, 10, 111);
+  margin-bottom: 12px;
+  padding: 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.message span {
+  font-size: 12px;
+}
+
+.fa-thumbs-up {
+  color: white;
+}
+
+.fa-thumbs-down {
+  color: white;
+}
+
+.fa-trash {
+  color: white;
+}
